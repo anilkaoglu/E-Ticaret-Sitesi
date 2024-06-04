@@ -1,0 +1,139 @@
+/* ! HEADER YAPISI */
+
+.contact ul li a{
+ text-decoration: none;
+ color: rgb(108, 117, 125);
+ padding-left: 10px;
+}
+
+.icons{
+  padding-left: 400px;
+}
+
+.menu ul li a{
+ text-decoration: none;
+ color: rgb(108, 117, 125);
+}
+
+.btn-group{
+  margin: 30px;
+  margin-left: 100px;
+  margin-top: -21px;
+}
+
+.fa{
+  margin-left: 20px;
+}
+
+.navbar{
+  margin-left: 100px;
+  margin-top: -30px;
+}
+
+.search{
+ padding-right: 100px;
+ 
+}
+
+.carousel{
+  margin-bottom: 50px;
+}
+
+/* ! SİDEBAR YAPISI */
+
+.list-group{
+ width: 75%;
+}
+
+.card{
+ float: left;
+ margin: 5px;
+}
+
+.sidebar{
+  padding-top: 80px;
+}
+
+/* ! FOOTER YAPISI */
+
+.nav-item{
+  list-style: none;
+}
+
+.input{
+ border: none;
+ margin-top: 20px;
+}
+
+.bas{
+  background-color: orange;
+}
+
+/* ! MİDDLE */
+
+.one{
+  margin-top: -20px;
+}
+
+.two{
+  margin-top: -15px;
+}
+
+.three{
+  margin-top: -15px;
+}
+
+.four{
+  margin-top: -15px;
+}
+
+.five{
+  margin-top: -15px;
+}
+
+.six{
+  margin-top: -15px;
+}
+
+.social-networks ul li{
+  list-style: none;
+  float: left;
+  margin-top: 20px;
+}
+
+/* ! LOGİN */
+
+.or{
+  width: 45px;
+  height: 45px;
+  border: 2px solid ;
+  border-radius: 50px;
+  text-align: center;
+  font-size: larger;
+  margin-top: 100px;
+  margin-left: 75px;
+}
+
+.login{
+margin-top: 100px;
+margin-bottom: 150px;
+}
+
+/* ! CART */
+
+.user_option{
+  list-style: none;
+}
+
+.user_info{
+  list-style: none;
+}
+
+.single_field{
+  float: left;
+  margin-right: 10px
+}
+
+.total{
+  width: 500px;
+}

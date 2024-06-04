@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+<!-- ! CSS EKLENTİSİ -->
+    <link rel="stylesheet" href="style.css">
+
+<!-- ! BOOTSTRAP EKLENTİSİ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<!-- ! FONTAWESOME EKLENTİSİ -->
+    <script src="https://kit.fontawesome.com/adf8494542.js" crossorigin="anonymous"></script>
+    
+</head>
+<body class="overflow-x-hidden">
+
+<!-- ! HEADER YAPISI -->
+
+<div class="header_top bg-secondary-subtle">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="contact">
+                    <ul class="nav mt-2">
+                        <li><a href=""><i class="fa fa-phone text-secondary"></i> +2 95 01 88 821</a></li>
+                        <li><a href=""><i class="fa fa-envelope text-secondary"></i> info@domain.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="icons">
+                    <ul class="nav mt-2>
+                        <li><a href=""><i class="fa fa-facebook text-secondary m-3"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter text-secondary m-3"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin text-secondary m-3"></i></a></li>
+                        <li><a href=""><i class="fa fa-dribbble text-secondary m-3"></i></a></li>
+                        <li><a href=""><i class="fa fa-google-plus text-secondary m-3"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="header-middle">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="logo mt-4">
+                    <a href=""><img src="img/logo.png" alt="" /></a>
+                </div>
+                <div class="btn-group">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle text-secondary">
+                            USA
+                            <span class="caret"></span>
+                        </button>
+                    </div>
+                    
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle text-secondary">
+                            DOLLAR
+                            <span class="caret"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="menu mt-4 float-lg-end ">
+                    <ul class="nav">
+                        <li><a href=""><i class="fa fa-user text-secondary"></i> Account</a></li>
+                        <li><a href=""><i class="fa fa-star text-secondary"></i> Wishlist</a></li>
+                        <li><a href=""><i class="fa fa-crosshairs text-secondary"></i> Checkout</a></li>
+                        <li><a href="index5.html"><i class="fa fa-shopping-cart text-secondary"></i> Cart</a></li>
+                        <li><a href="index3.html"><i class="fa fa-lock text-secondary"></i> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-secondary" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Shop
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index4.html">Products</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Blog
+            </a>
+            <li class="nav-item">
+                <a class="nav-link active text-secondary" aria-current="page" href="#">404</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-secondary" aria-current="page" href="index2.html">Contact</a>
+              </li>
+        </ul>
+        <form class=" search d-flex" role="search">
+          <input class="form-control me-2 bg-body-secondary" type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </div>
+    </div>
+  </nav>
+    
+  <!-- ! CART -->
+
+  <section id="cart">
+    <div class="container">
+        <div class="breadcrumbs">
+            <ol class="breadcrumb">
+              <li class=" bg-warning me-3 mt-4 mb-4 text-white">Home</li>
+              <li class="text-secondary mt-4">Shopping Cart</li>
+            </ol>
+        </div>
+        <div class="tables">
+            <table class="table">
+                <thead>
+                    <tr class="cart_menu">
+                        <td class="image bg-warning text-white">Item</td>
+                        <td class="description bg-warning"></td>
+                        <td class="price bg-warning text-white">Price</td>
+                        <td class="quantity bg-warning text-white">Quantity</td>
+                        <td class="total bg-warning text-white">Total</td>
+                        <td class="bg-warning"></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="cart_product">
+                            <a href=""><img src="img/footer.png" alt=""></a>
+                        </td>
+                        <td class="cart_description text-secondary">
+                            <h4>Colorblock Scuba</h4>
+                            <p>Web ID: 1089772</p>
+                        </td>
+                        <td class="cart_price text-secondary">
+                            <p>$59</p>
+                        </td>
+                        <td class="cart_quantity">
+                            <div class="cart_quantity_button">
+                                <button class="border-0">+</button>
+                                <input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+                                <button class="border-0">-</button>
+                            </div>
+                        </td>
+                        <td class="cart_total">
+                            <p class="cart_total_price text-secondary">$59</p>
+                        </td>
+                        <td class="cart_delete">
+                            <a class="cart_quantity_delete text-secondary" href=""><i class="fa fa-times"></i></a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="cart_product">
+                            <a href=""><img src="img/footer.png" alt=""></a>
+                        </td>
+                        <td class="cart_description text-secondary">
+                            <h4>Colorblock Scuba</h4>
+                            <p>Web ID: 1089772</p>
+                        </td>
+                        <td class="cart_price text-secondary">
+                            <p>$59</p>
+                        </td>
+                        <td class="cart_quantity">
+                            <div class="cart_quantity_button">
+                                <button class="border-0">+</button>
+                                <input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+                                <button class="border-0">-</button>
+                            </div>
+                        </td>
+                        <td class="cart_total">
+                            <p class="cart_total_price text-secondary">$59</p>
+                        </td>
+                        <td class="cart_delete">
+                            <a class="cart_quantity_delete text-secondary" href=""><i class="fa fa-times"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cart_product">
+                            <a href=""><img src="img/footer.png" alt=""></a>
+                        </td>
+                        <td class="cart_description text-secondary">
+                            <h4>Colorblock Scuba</h4>
+                            <p>Web ID: 1089772</p>
+                        </td>
+                        <td class="cart_price text-secondary">
+                            <p>$59</p>
+                        </td>
+                        <td class="cart_quantity">
+                            <div class="cart_quantity_button">
+                                <button class="border-0">+</button>
+                                <input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+                                <button class="border-0">-</button>
+                            </div>
+                        </td>
+                        <td class="cart_total">
+                            <p class="cart_total_price text-secondary">$59</p>
+                        </td>
+                        <td class="cart_delete">
+                            <a class="cart_quantity_delete text-secondary" href=""><i class="fa fa-times"></i></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+    <div class="container mt-5">
+        <div class="heading fs-6">
+            <h3>What would you like to do next?</h3>
+            <p class="text-secondary">Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost.</p>
+        </div>
+    </div>
+
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="chose_area">
+                <ul class="user_option">
+                    <li>
+                        <input type="checkbox">
+                        <label class="text-secondary">Use Coupon Code</label>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <label class="text-secondary">Use Gift Voucher</label>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <label class="text-secondary">Estimate Shipping & Taxes</label>
+                    </li>
+                </ul>
+                <ul class="user_info">
+                    <li class="single_field">
+                        <label class="text-secondary">Country:</label><br>
+                        <select>
+                            <option class="">United States</option>
+                        </select>
+                    </li>
+                    <li class="single_field">
+                        <label class="text-secondary">Region / State:</label><br>
+                        <select>
+                            <option class="">Select</option>
+                        </select>
+                    </li>
+                    <li class="zip-field">
+                        <label class="text-secondary">Zip Code:</label><br>
+                        <input type="text">
+                    </li>
+                </ul>
+                <button class="bg-warning text-white border-0">Get Quotes</button>
+                <button class="bg-warning text-white border-0">Continue</button>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="total_area">
+                    <input class="total" type="text" placeholder="Cart Sub Total $59" disabled><br>
+                    <input class="total mt-1"  type="text" placeholder="Eco Tax $2" disabled><br>
+                    <input class="total mt-1" type="text" placeholder="Shipping Cost Free" disabled><br>
+                    <input class="total mt-1" type="text" placeholder="Total $61"disabled><br>
+                    <button class="mt-4 bg-warning text-white border-0">Update</button>
+                    <button class=" bg-warning text-white border-0">Check Out</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+<!--! FOOTER YAPISI -->
+
+<div class="bg-body-secondary">
+	<div class="row mt-5">
+		<div class="col-md-6 mt-5">
+			<div class="row ">
+				<div class="col-md-4 text-secondary fs-6">
+					<img src="img/shopper.png" alt="">
+					<p>Lorem ipsum dolor sit amet.</p>
+				</div>
+				<div class="col-md-4 text-secondary fs-6">
+					<img src="img/footer.png" alt="">
+					<p>Lorem ipsum.</p>
+				</div>
+				<div class="col-md-4 text-secondary fs-6">
+					<img src="img/footer.png" alt="">
+					<p>Lorem ipsum.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6 mt-5">
+			<div class="row">
+				<div class="col-md-4 text-secondary fs-6">
+					<img src="img/footer.png" alt="">
+					<p>Lorem ipsum.</p>
+				</div>
+				<div class="col-md-4 text-secondary fs-6">
+					<img src="img/footer.png" alt="">
+					<p>Lorem ipsum.</p>
+				</div>
+				<div class="col-md-4">
+					<img src="img/footer.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col-md-4 ">
+					<h6 class="text-center text-black">SERVICE</h6>
+					<ul>
+						<li class="nav-item">
+							<a class="nav-link active text-secondary" aria-current="page" href="#">Online Help</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link active text-secondary" aria-current="page" href="#">Contact Us</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link active text-secondary" aria-current="page" href="#">Order Status</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link active text-secondary" aria-current="page" href="#">Change Location</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link active text-secondary" aria-current="page" href="#">FAQ's</a>
+						  </li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h6 class="text-center">QUOCK SHOP</h6>
+					<ul>
+						<li class="nav-item">
+							<a class="nav-link active text-secondary" aria-current="page" href="#">T-Shirt</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link active text-secondary" aria-current="page" href="#">Mens</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link active text-secondary" aria-current="page" href="#">Womens</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link active text-secondary" aria-current="page" href="#">Gift Cards</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link active text-secondary" aria-current="page" href="#">Shoes</a>
+						  </li>
+					</ul>  
+				</div>
+				<div class="col-md-4">
+					<h6 class="text-center">POLICIES</h6>
+					<ul>
+						<li class="nav-item">
+							<a class="nav-link active text-secondary" aria-current="page" href="#">Term of Use</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link active text-secondary" aria-current="page" href="#">Privecy Policy</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link active text-secondary" aria-current="page" href="#">Refund Policy</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link active text-secondary" aria-current="page" href="#">Billing System</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link active text-secondary" aria-current="page" href="#">Ticket System</a>
+						  </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col-md-6">
+					<h6 class="text-center">ABOUT SHOPPER</h6>
+					<ul>
+						<li class="nav-item">
+							<a class="nav-link active text-secondary" aria-current="page" href="#">Company Infermation</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link active text-secondary" aria-current="page" href="#">Careers</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link active text-secondary" aria-current="page" href="#">Store Location</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link active text-secondary" aria-current="page" href="#">Affilate Program</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link active text-secondary" aria-current="page" href="#">Copyright</a>
+						  </li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<h6 class="text-center">ABOUT SHOPPER</h6>
+					<input class="input" type="text" name="" placeholder="Your email address">
+					<i class="fa-solid fa-share text-warning"></i>
+					<p class="fs-6 text-secondary" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, voluptates.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- ! JAVASCRİPT EKLENTİSİ -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
